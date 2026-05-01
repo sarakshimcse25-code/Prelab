@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Page</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        display: flex;
+        height: 100vh;
+    }
+
+    /* Left side */
+    .left {
+        width: 40%;
+        background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Right side */
+    .right {
+        width: 60%;
+        padding: 30px;
+    }
+
+    /* Cards */
+    .card {
+        background: #f4f4f4;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        background: #ffe0d6;
+        transform: scale(1.05);
+    }
+
+    /* Button */
+    button {
+        padding: 10px 15px;
+        border: none;
+        background: #ff7e5f;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #e85c3d;
+    }
+    </style>
+</head>
+
+<body>
+
+<div class="left">
+    <h1>Welcome</h1>
+    <p>Creative Design</p>
+    <button>Explore</button>
+</div>
+
+<div class="right">
+    <h2>Features</h2>
+
+    <div class="card">
+        <h3>Fast</h3>
+        <p>Simple and quick layout</p>
+    </div>
+
+    <div class="card">
+        <h3>Modern</h3>
+        <p>Gradient and clean UI</p>
+    </div>
+
+    <div class="card">
+        <h3>Responsive</h3>
+        <p>Works on all screens</p>
+    </div>
+</div>
+
+</body>
+</html>
