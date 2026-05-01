@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Iframe Webpage</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        padding: 15px;
+    }
+
+    .container {
+        display: flex;
+        height: 500px;
+    }
+
+    /* Menu Styling */
+    .menu {
+        width: 30%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+    }
+
+    .menu a {
+        display: block;
+        text-decoration: none;
+        background: #ff6f61;
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        background: #ff9068;
+        transform: scale(1.05);
+    }
+
+    /* Content Area */
+    .content {
+        width: 70%;
+        background: white;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    </style>
+</head>
+
+<body>
+
+<h1>Interactive Iframe Webpage</h1>
+
+<div class="container">
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="https://www.wikipedia.org" target="frame">Open Wikipedia</a>
+        <a href="https://www.example.com" target="frame">Open Example Site</a>
+
+        <!-- Map Embed Button -->
+        <a href="https://maps.google.com/maps?q=India&output=embed" target="frame">
+            Open Map
+        </a>
+
+        <!-- Internal HTML Content -->
+        <a href="data:text/html,
+            <html>
+            <body style='text-align:center;color:purple;'>
+            <h2>Welcome</h2>
+            <p>This is internal content loaded inside iframe</p>
+            </body>
+            </html>"
+           target="frame">
+           Show Internal Content
+        </a>
+    </div>
+
+    <!-- Iframe Display Area -->
+    <div class="content">
+        <iframe name="frame" srcdoc="
+            <h1 style='text-align:center;color:blue;'>Welcome</h1>
+            <p style='text-align:center;'>Click any option from the left menu.</p>
+        ">
+        </iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
