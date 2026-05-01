@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>IMAGE GALLERY</h1>
+<h3>UNDERWATER</h3>
+
+<div class="gallery">
+    <img src="https://i.pinimg.com/736x/df/4c/e7/df4ce71c94423cc857b649837e523384.jpg" alt="Image 1">
+    <img src="https://i.pinimg.com/1200x/b7/22/71/b7227121969798893cc27a41620c6e.jpg" alt="Image 2">
+    <img src="https://i.pinimg.com/736x/0e/b3/a4/0eb3a42a6a6d76eea99a620f8af1a44e.jpg" alt="Image 3">
+    <img src="https://i.pinimg.com/736x/fe/43/fc/fe43fcdab4b7df4cb11328015ea53.jpg" alt="Image 4">
+    <img src="https://i.pinimg.com/736x/23/3f/a6/233fa614115d6abb20e1ae113f7474.jpg" alt="Image 5">
+    <img src="https://i.pinimg.com/736x/1a/c4/99/1ac4999c3fbd6801765057c4c2968c53.jpg" alt="Image 6">
+    <img src="https://i.pinimg.com/736x/c7/9c/ff/c79cff3fc5a2a88c8e511a1a43a49ee7.jpg" alt="Image 7">
+    <img src="https://i.pinimg.com/736x/f8/c7/b3/f8c7b33c0264d6f85f8623bc38bf57.jpg" alt="Image 8">
+    <img src="https://i.pinimg.com/736x/0b/2d/0d/0b2d4d0967fb52b258696bd78cbfec.jpg" alt="Image 9">
+    <img src="https://i.pinimg.com/736x/14/9b/73/149b73e711c97853e8d26235d3c7b285.jpg" alt="Image 10">
+</div>
+
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+
+    /* Gradient Background */
+    background: linear-gradient(rgb(51, 118, 226));
+    color: white;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    gap: 5px;
+    padding: 20px;
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
